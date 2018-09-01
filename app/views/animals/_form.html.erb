@@ -1,0 +1,19 @@
+<%= form_for @animal do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+
+  <%= f.label :hair_color %>
+  <%= f.text_field :hair_color %>
+
+  <%= f.label :gender %>
+  <%= f.text_field :gender %>
+
+  <%= f.label :alive %>
+  <%= f.text_field :alive %>
+  <%# <%= f.select :alive, [ 'Yes', 'No' ], :prompt => 'Select One' %>
+
+  <%= f.submit %>
+<% end %>
